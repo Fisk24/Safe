@@ -1,0 +1,9 @@
+### For setup ###
+generate .desktop launcher file
+
+### For setup library ##
+declare variables for all static directories
+Traceback (most recent call last):
+  File "./sudo_safe.pyw", line 4, in <module>
+    os.chdir("/home/fisk/Projects/python/Safe")
+FileNotFoundError: [Errno 2] No such file or directory: '/home/fisk/Projects/python/Safe'
