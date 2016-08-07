@@ -7,3 +7,8 @@ Traceback (most recent call last):
   File "./sudo_safe.pyw", line 4, in <module>
     os.chdir("/home/fisk/Projects/python/Safe")
 FileNotFoundError: [Errno 2] No such file or directory: '/home/fisk/Projects/python/Safe'
+
+### Write an extention for safe that can browse for files on ssh servers
+# sshfs the dir of the container
+# decrypt/mount container
+# program exceptions for lost connections

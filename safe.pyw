@@ -51,6 +51,7 @@ from PyQt4.QtCore import *
 from lib          import logger
 from lib.config   import Config
 from lib.qtUI.nlv import NewLuksUI
+from lib.oslib    import OffSite
 
 class Main(QMainWindow):
 	def __init__(self):
@@ -108,7 +109,7 @@ class Main(QMainWindow):
 
 		#### Actions ####
 		self.ui.securityComboBox.currentIndexChanged[str].connect(self.switchSecurity)
-		self.ui.volumeTypeComboBox.currentIndexChanged[str].connect(self.switchMode)
+		#self.ui.volumeTypeComboBox.currentIndexChanged[str].connect(self.switchMode)
 
 		#### Window Stays On Top ####
 		self.setWindowFlags(Qt.WindowStaysOnTopHint)

@@ -10,19 +10,19 @@
     <x>0</x>
     <y>0</y>
     <width>279</width>
-    <height>299</height>
+    <height>305</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
     <width>279</width>
-    <height>263</height>
+    <height>305</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>9999</width>
-    <height>9999</height>
+    <width>279</width>
+    <height>305</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -35,7 +35,7 @@
       <x>0</x>
       <y>0</y>
       <width>281</width>
-      <height>281</height>
+      <height>298</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout">
@@ -69,12 +69,9 @@
           <number>0</number>
          </property>
          <item>
-          <widget class="QLabel" name="label">
+          <widget class="QCheckBox" name="offSiteCheckBox">
            <property name="text">
-            <string>Volume</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            <string>Off-site</string>
            </property>
           </widget>
          </item>
@@ -89,26 +86,6 @@
            </property>
           </widget>
          </item>
-         <item>
-          <widget class="QComboBox" name="volumeTypeComboBox">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <item>
-            <property name="text">
-             <string>LUKS</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>DM-C</string>
-            </property>
-           </item>
-          </widget>
-         </item>
         </layout>
        </item>
        <item>
@@ -116,7 +93,7 @@
          <item>
           <widget class="QLineEdit" name="volumeLineEdit">
            <property name="text">
-            <string>Choose File</string>
+            <string>Volume</string>
            </property>
           </widget>
          </item>
@@ -174,14 +151,21 @@
         </layout>
        </item>
        <item>
-        <widget class="QLineEdit" name="passwordLineEdit">
-         <property name="text">
-          <string>Password</string>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <property name="topMargin">
+          <number>0</number>
          </property>
-         <property name="echoMode">
-          <enum>QLineEdit::Password</enum>
-         </property>
-        </widget>
+         <item>
+          <widget class="QLineEdit" name="passwordLineEdit">
+           <property name="text">
+            <string>Password</string>
+           </property>
+           <property name="echoMode">
+            <enum>QLineEdit::Password</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
        </item>
       </layout>
      </item>
@@ -207,7 +191,7 @@
      <x>0</x>
      <y>0</y>
      <width>279</width>
-     <height>27</height>
+     <height>28</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuHidden">
@@ -257,11 +241,9 @@
   <tabstop>volumeLineEdit</tabstop>
   <tabstop>volumeToolButton</tabstop>
   <tabstop>newVolToolButton</tabstop>
-  <tabstop>volumeTypeComboBox</tabstop>
   <tabstop>securityComboBox</tabstop>
   <tabstop>keyLineEdit</tabstop>
   <tabstop>keyToolButton</tabstop>
-  <tabstop>passwordLineEdit</tabstop>
   <tabstop>openButton</tabstop>
   <tabstop>closeButton</tabstop>
  </tabstops>
