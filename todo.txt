@@ -1,3 +1,6 @@
+When luksLocker closes, always try to remove the device luksLocker1
+if it fails to remove the device, do nothing.
+
 ### For setup ###
 generate .desktop launcher file
 

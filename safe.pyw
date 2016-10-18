@@ -152,10 +152,7 @@ class Main(QMainWindow):
 		self.mode = string
 
 	def chooseNewVol(self):
-		if self.ui.volumeTypeComboBox.currentText() == "LUKS":
-			self.showNewLuksUI()
-		elif self.ui.volumeTypeComboBox.currentText() == "DM-C":
-			self.showNewDMCryptUI()
+		self.showNewLuksUI()
 
 	def showNewLuksUI(self):
 		x = NewLuksUI.getNewLuksUI(self)
